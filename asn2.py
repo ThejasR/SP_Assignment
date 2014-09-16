@@ -1,5 +1,5 @@
 '''
-Author: Thejas.R 1PI12IS120
+Author: Thejas.R
 		Roshni.A
 Function: csv_dict_reader()
 		  main()
@@ -36,7 +36,9 @@ def csv_dict_reader(file_obj,file1,file2):
 		x=(line["Country"])
 		y=(line["Capital"])
 		z=(line["Population"])
-		f.write("The capital of %s is %s and its population is %s \n"%(x,y,z))
+		t=(line["Language"])
+		z=int(z)
+		f.write("The capital of %s is %s and with a population of %d and the language spoken is %s \n"%(x,y,z,t))
 		k = datetime.datetime.now()
 		l.write("%s %d entry of country written to text file \n"%(k,j))
 		j=j+1
@@ -61,8 +63,8 @@ def main(argv):
 
 if __name__ == "__main__":
 	f_obj=''
-	main(sys.argv[1:])		
-	with open("Country.csv", "r") as f_obj:
+	main(sys.argv[1:])
+	with open("countries.csv", "r") as f_obj:
 		f=outputfile 
 		l=logfile          
 		csv_dict_reader(f_obj,f,l)

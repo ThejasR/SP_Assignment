@@ -1,11 +1,11 @@
-Country,Capital,Population
-Argentina,Buenos Aires,38747150
-Bangladesh,Dhaka,141822300
-Bhutan,Thimpu,2162546
-China,Beijing,1315844000
-France,Paris,30495540
-Germany,Berlin,82689210
-India,New Delhi,1103371000
-Italy,Rome,58092740
-Japan,Tokyo,128084700
-Malaysia,Putrajaya,25347370
+Country,Capital,Population,Language
+Argentina,Buenos Aires,38747150,Spanish
+Bangladesh,Dhaka,141822300,Bengali
+Bhutan,Thimpu,2162546,Dzongka
+China,Beijing,1315844000,Standard Chinese
+France,Paris,30495540,French
+Germany,Berlin,82689210,German
+India,New Delhi,1103371000,Hindi
+Italy,Rome,58092740,Italian
+Japan,Tokyo,128084700,Japanese
+Malaysia,Putrajaya,25347370,Malaysian
