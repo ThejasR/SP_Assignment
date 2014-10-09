@@ -1,3 +1,8 @@
+import os
+import csv
+import sys, getopt
+import datetime
+
 '''
 Author: Thejas.R
 		Roshni.A
@@ -16,9 +21,6 @@ Parameters: csv_dict_reader():
 			main():
 			argv
 '''
-import csv
-import sys, getopt
-import datetime
 
 logfile=''
 outputfile=''
@@ -62,9 +64,10 @@ def main(argv):
       	print ('test.py -f <inputfile> -l <logfile>')
 
 if __name__ == "__main__":
-	f_obj=''
 	main(sys.argv[1:])
-	with open("countries.csv", "r") as f_obj:
+	os.system("python3 upgrade.py")
+	
+	with open("Country.csv", "r") as f_obj:
 		f=outputfile 
 		l=logfile          
 		csv_dict_reader(f_obj,f,l)
